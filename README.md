@@ -1,5 +1,13 @@
 # IP-Details
 
+## Description
+This program is used to list out the information of multiple public IP Addresses. It displays the type of IP, continent, country, country capital, region, city, latitude, longitude, organization and the ISP. Internet connection is mandatory for this program to execute. Libraries used are requests, json, csv, pandas, os.
+
+## Files Used
+1. ip.csv (IP address input file)
+2. ip_details.py (Main program)
+3. ip_info.csv (Output file)
+
 ## Code
 ```
 import requests
@@ -34,4 +42,6 @@ f.close()
 os.remove('FINAL.csv')
 df[::2].to_csv('ip_info.csv')
 ```
+
+**View [docs](https://docs.google.com/document/d/1YUmSMYsSUedoLNFgHlENzEF24FvgG6kRCrZJ4b2XudM/edit?usp=sharing) for more info**
 
